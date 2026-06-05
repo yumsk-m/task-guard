@@ -1,0 +1,13 @@
+name = "task-guard"
+main = "src/index.ts"
+compatibility_date = "2026-06-05"
+
+# Set your actual route/zone in production if needed.
+# workers_dev = true
+
+[triggers]
+crons = [
+  "0 9 * * 1-5",
+  "30 18 * * 1-5",
+  "0 10 * * 1"
+]

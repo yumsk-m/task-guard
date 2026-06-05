@@ -1,0 +1,26 @@
+{
+  "name": "task-guard",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Task Guard Discord Interactions + Notion on Cloudflare Workers",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "tsc -p tsconfig.json --noEmit",
+    "deploy": "wrangler deploy",
+    "register:commands": "tsx src/scripts/registerCommands.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "wrangler": "^3.114.8"
+  }
+}
